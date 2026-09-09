@@ -1,0 +1,31 @@
+OPDATER REGNSKABET
+
+1. Læg disse to filer i denne mappe:
+   regnskab.xlsx
+   saldobalance.xlsx
+
+2. Dobbeltklik på START.cmd.
+
+3. Åbn opdateret_regnskab.xlsx i Excel.
+   Læs notitsen i startvinduet, før du lukker det.
+
+Året aflæses automatisk fra saldobalancen. Der kræves ingen opsætning,
+API-adgang eller internetforbindelse. Python 3.10 eller nyere skal være
+installeret på computeren; de øvrige biblioteker følger med.
+
+Kun første ark i regnskabet opdateres. Saldobalancen har forrang:
+fortegn vendes, manglende konti sættes til nul, og delsummer opdateres.
+Resultatformlen er tilpasset negative udgifter.
+Overskriften bliver fx: Regnskab2026 pr. 09.09.
+
+Inputfilerne ændres aldrig. Luk outputfilen i Excel før næste kørsel.
+Output har altid navnet opdateret_regnskab.xlsx. Et tidligere output
+gemmes automatisk under program/sikkerhedskopier, før det erstattes.
+
+Notitsen viser konti, der er blevet nul siden sidste import. Første gang
+sammenlignes med regnskab.xlsx. Rapport og historik gemmes automatisk i
+programmappen. De skal ikke redigeres. Rapporten kan genlæses i
+program/seneste_rapport.txt.
+
+Hele denne mappe kan flyttes eller kopieres til en anden computer.
+Der er ingen afhængighed af mapper eller filer uden for denne mappe.

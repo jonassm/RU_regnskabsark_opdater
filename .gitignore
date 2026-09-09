@@ -1,0 +1,7 @@
+*.xlsx
+~$*
+program/historik.json
+program/seneste_rapport.*
+program/sikkerhedskopier/
+__pycache__/
+program/__pycache__/
